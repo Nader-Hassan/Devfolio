@@ -1,0 +1,513 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+li, a 
+{
+    text-decoration: none;
+    list-style: none;
+}
+body
+{
+  background-color: #F5F5F5;
+}
+:root
+{
+    --bluecolor:#0078FF;
+}
+.section-header
+{
+    padding-bottom: 4rem;
+}
+.section-header h3
+{
+    Font-size: 48px;
+    Font-weight: 700;
+    color: rgb(30, 30, 30);
+}
+.section-header p
+{
+     color: rgb(78, 78, 78);
+}
+.line
+{
+    background-color: var(--bluecolor);
+    width: 40px;
+    height: 5px;
+    margin: auto;
+}
+/* ****************************************************************************************************************************** */
+
+
+
+/****************************************************** start Nav bar  *********************************************************************/
+.nav-color
+{
+    background-color: #040404;
+    z-index: 0 !important; 
+}
+.nav-item a 
+{
+    padding: 20px!important;
+}
+.line-effect
+{
+    position: relative;
+}
+.line-effect::after
+{
+    content: "";
+    background-color: #fff;
+    width:50px;
+    height: 2px;
+    position: absolute;
+    bottom: 10px;
+    left:20px;
+    font-size: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+.nav-item:hover .line-effect::after
+{
+    visibility: visible;
+    opacity: 1;
+}
+.line-effect i 
+{
+    padding-left: 5px;
+}
+
+/****************************************************** End Nav bar  *********************************************************************/
+
+/****************************************************** start Home section  *********************************************************************/
+#home
+{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/hero-bg.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+#home h1
+{
+    color: #fff;
+    font-size: 72px;
+   
+}
+#home span
+{
+    color: #fff;
+    font-size: 40px;
+    padding-top: 20px;
+    font-weight: 500;
+}
+/****************************************************** End Home section  *********************************************************************/
+
+
+/****************************************************** start Home section  *********************************************************************/
+#about
+{
+    padding: 4rem 0;
+}
+.about-content
+{ 
+    padding: 4rem 2rem;
+    box-shadow:  0 1px 1px 0 rgb(0 0 0 / 6%), 0 2px 5px 0 rgb(0 0 0 / 20%); 
+}
+
+.about-data p
+{
+    margin-bottom: 4px ;
+}
+.about-text h5
+{
+    Font-size: 32px;
+    Font-weight: 500;
+    color: rgb(30, 30, 30);
+    position: relative;
+}
+.about-text p
+{
+    Font-size: 20px;
+    Font-weight: 300;
+    line-height: 30px;
+    color: rgb(78, 78, 78);
+}
+
+.about-valus
+{
+    padding-top: 0rem;
+}
+.about-valus p
+{
+    Font-size: 17.6px;
+    Font-weight: 600;
+    color: rgb(30, 30, 30);
+}
+.about-valus p span
+{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(78, 78, 78)
+}
+.about-text h5::after
+{
+    content: "";
+    position: absolute;
+    background-color:var(--bluecolor);
+    height: 3px;
+    width: 100px;
+    left: 0;
+    bottom: -10px;
+}
+/****************************************************** end Home section  *********************************************************************/
+
+
+/****************************************************** start services section  *********************************************************************/
+#services
+{
+    padding-top: 4rem ;
+}
+.service-box
+{
+    padding: 2.5rem 1.3rem;
+    margin-bottom: 3rem;
+    border-radius: 1rem;
+    background-color: #fff;
+    box-shadow: 0 13px 8px -10px rgb(0 0 0 / 10%)
+}
+.service-box h2
+{
+    Font-size: 22.4px;
+    Font-weight: 500;
+    color: rgb(30, 30, 30);
+}
+.service-box p 
+{
+     color: rgb(78, 78, 78);
+     line-height: 24px;
+}
+.ico-circle
+{
+    margin-bottom: 40px;
+    padding-top: 2rem;   
+}
+.ico-circle i
+{
+    font-size: 40px;
+    border: 10px solid var(--bluecolor);
+    border-radius: 50%;
+    padding: 1.7rem;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+.ico-circle:hover i
+{
+    border-color: rgba(255, 255, 255, 0.5);
+    background-color: var(--bluecolor);
+    color: #fff;
+}
+.services-values
+{
+    background-image:linear-gradient(rgba(0, 120, 255, 0.7),rgba(0, 120, 255, 0.7)),url(../images/post-3.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    padding: 8rem;
+}
+.services-values span 
+{
+    font-size: 32px;
+}
+.ico-circle2
+{
+    padding: 30px 0;
+}
+.ico-circle2 i
+{
+    font-size: 32px;
+    border: 10px solid rgb(205,225,248);
+    border-radius: 50%;
+    padding: 0.8rem;
+}
+/****************************************************** end services section  *********************************************************************/
+
+/****************************************************** start portfolio section  *********************************************************************/
+#portfolio
+{
+    padding-top: 4rem ;
+}
+.card-texto p
+{
+    Font-size: 12.8px;
+    color: rgb(78, 78, 78); 
+}
+.card-texto span
+{
+    color:var(--bluecolor);
+}
+.ico-circle3
+{
+    text-align: right;
+}
+.ico-circle3 i
+{
+    Font-size: 40px;
+    color: rgb(0, 120, 255);
+    cursor: pointer;
+}
+.port-content
+{
+    box-shadow: 0 13px 8px -10px rgb(0 0 0 / 10%);
+    border-radius: 0 !important;
+    border: none;
+}
+.port-content img
+{
+    transition: all  0.4s ease-in-out;
+}
+.port-content:hover img
+{
+    transform: scale(1.2,1.2);
+}
+.img-overflow
+{
+    overflow: hidden;
+}
+ .port-feedback
+{
+    background-image:linear-gradient(rgba(0, 120, 255, 0.7),rgba(0, 120, 255, 0.7)),url(../images/overlay-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    padding: 8rem;
+} 
+.author
+{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 1rem 0;
+    display: block;
+    font-size: 1.4rem;
+}
+.description
+{
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: #fff;
+}
+.port-btn button
+{
+    border-radius:50%;
+    height: 11px !important;
+    width: 11px !important;
+    margin-left: 5px !important;
+}
+/****************************************************** end portfolio section  *********************************************************************/
+
+/****************************************************** start blog section  *********************************************************************/
+#blog
+{
+    padding: 4rem 0;
+}
+.blog-shadow
+{
+    box-shadow: 0 13px 8px -10px rgb(0 0 0 / 10%)
+}
+.blog-text
+{
+    width: 50%;
+    text-align: right;
+}
+.blog-text p
+{
+ color: rgb(78, 78, 78);
+ margin-bottom: 0 !important;
+}
+.blog-text span
+{
+    padding-right: 4px;
+}
+.blog-img
+{
+    width:35px;
+}
+.blog-freeman
+{
+    width: 50%;
+}
+.blog-freeman a
+{
+    color:rgb(78, 78, 78);
+    transition: all 0.3s ease-in-out;
+}
+.blog-freeman a:hover
+{
+    color: #0078FF;
+}
+.blog-btn
+{
+    border: 1px solid #0078FF;
+    background-color: #0078FF;
+    color: #fff;
+    width: fit-content;
+    padding:6px 14px;
+    border-radius: 5px;
+    font-size: 11.2px;
+    font-weight: 500;
+    margin: auto;
+    position: relative;
+    transform: translate(0px,-15px);
+}
+.blog-body
+{
+    padding-top: 0 !important;
+    padding-bottom: 2rem;
+}
+.blog-body h5
+{
+    font-size: 20.8px;
+}
+/****************************************************** end blog section  *********************************************************************/
+
+/****************************************************** start contact section  *********************************************************************/
+#contact
+{
+   padding: 2rem 0 0 0;
+}
+.bg-contact
+{
+    background-image:linear-gradient(rgba(0, 120, 255, 0.7),rgba(0, 120, 255, 0.7)),url(../images/overlay-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    padding: 8rem 8rem 3rem 8rem;
+}
+.contact-shadow
+{
+    box-shadow:0 1px 1px 0 rgb(0 0 0 / 6%), 0 2px 5px 0 rgb(0 0 0 / 20%);
+    padding: 3rem;
+}
+.contact1-shadow
+{
+    box-shadow: 0 13px 8px -10px rgb(0 0 0 / 10%);
+    position: relative;
+}
+.contact-side h5
+{
+    position: relative;
+    Font-size: 32px;
+    Font-weight:500;
+    color: rgb(30, 30, 30);
+}
+.contact-side h5::after
+{
+    content: "";
+    position: absolute;
+    background-color:var(--bluecolor);
+    height: 3px;
+    width: 100px;
+    left: 0;
+    bottom: -10px;
+}
+.contact-side form
+{
+    padding:2rem 0;
+}
+.test
+{
+    margin-top: 2rem;
+}
+.big-btn
+{
+    border-radius: 5rem;
+    font-size: 19.2px;
+    padding: 10px 25px;
+}
+.contact-side p
+{
+    Font-size: 20px;
+    Font-weight: 300;
+    Line-height: 30px;
+    color: rgb(78, 78, 78);
+    padding:2rem 0 0rem 0;
+}
+.contact-side 
+{
+     color: rgb(78, 78, 78);
+}
+.contact-data p
+{
+    font-size: 16px;
+    margin-bottom: 0;
+    font-weight: 400;
+    padding: 0px 0;
+
+}
+.contact-data p i
+{
+    padding-right: 1rem;
+    color: var(--bluecolor);
+}
+.social-icons
+{
+    padding: 1rem 0;
+}
+.social-icons i
+{
+    margin: 0 1rem;
+    padding: 0.5rem;
+    font-size: 19.2px;
+    color: #000;
+    border: 3px solid #0078FF;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+.social-icons i:hover
+{
+    background-color: var(--bluecolor);
+    color: #fff;
+    border-color:rgba(255, 255, 255, 0.5);
+}
+
+/****************************************************** end contact section  *********************************************************************/
+.footer
+{
+    background-color: #0062D3;
+    padding:1rem 0;
+}
+.back-to-top
+{
+    position: fixed;
+    visibility: visible;
+    opacity: 1;
+    right: 15px;
+    bottom: 15px;
+    z-index: 996;
+    background: #0078ff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    transition: all 0.4s;
+}
+
+.back-to-top i {
+    font-size: 28px;
+    color: #fff;
+}
+.back-to-top:hover
+{
+    background-color: rgba(0, 120, 255, 0.7);
+}
+
+
+
